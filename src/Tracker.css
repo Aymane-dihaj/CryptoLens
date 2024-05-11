@@ -1,0 +1,85 @@
+.tracker{
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    min-height: 10em;
+    flex-grow: 1;
+
+    
+}
+
+.tracker > form{
+    width: 35%;
+    height: 45px;
+    margin: 30px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.tracker > h1{
+    color: whitesmoke;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.tracker-search{
+    width: 33%;
+    height: 100%;
+    background-color: transparent;
+    border: 1.3px solid whitesmoke;
+    border-radius: 6px;
+    display: flex;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    color: whitesmoke;
+    transition: border 0.2s ease-in-out;
+}
+
+.tracker-search:focus-within{
+    border-width: 2px;
+}
+
+.coins-container{
+    /* border: 3px solid green; */
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    height: 100%;
+}
+
+.refresh{
+    display: flex;
+    width: 100px;
+    margin-bottom: 100px;
+    height: 40px;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    font-family: inherit;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.refresh:hover{
+    background-color: transparent;
+    color: white;
+    backdrop-filter: blur(4px);
+    border: 1.3px solid white;
+}
