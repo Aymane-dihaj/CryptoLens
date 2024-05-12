@@ -51,7 +51,6 @@
 
 
     .btc-icon{
-        border: 2px solid red;
         width: 400px;
         object-fit: contain;
     }
@@ -74,7 +73,6 @@
             margin: 0 auto;
         }
         .header-h1{
-            border: 3px solid green;
             font-size: 60px;
         }
 
