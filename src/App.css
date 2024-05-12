@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
 
+
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -15,6 +17,7 @@ html, body{
 }
 
 body{
+  /* width: 100%; */
     background-image: url('./assets/background.jpg');
     background-position:top;
 }
@@ -28,6 +31,7 @@ body{
     /* justify-content: center; */
     flex-direction: column;
     gap: 100px;
+    max-width: 100%;
     /* border: 3px solid red; */
 }
 
@@ -100,7 +104,7 @@ body{
   }
   #mouse-scroll .mouse-in {
    -webkit-animation: animated-mouse 1.2s ease infinite;
-    moz-animation: mouse-animated 1.2s ease infinite;
+    -moz-animation: mouse-animated 1.2s ease infinite;
   }
   
   @-webkit-keyframes animated-mouse {
@@ -157,8 +161,3 @@ body{
   }
 
 
-  @media screen and (max-width: 650px) {
-
-    
-    
-  }

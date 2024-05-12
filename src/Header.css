@@ -5,6 +5,7 @@
     /* border: 2px solid green; */
     height: 70%;
     display: flex;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -51,8 +52,8 @@
 
 
     .btc-icon{
-        width: 400px;
-        object-fit: contain;
+        width: 300px;
+        object-fit: cover;
     }
     
     .header-h1{
@@ -71,9 +72,10 @@
             align-items: center;
             justify-content: center;
             margin: 0 auto;
+            /* border: 2px solid red; */
         }
         .header-h1{
-            font-size: 60px;
+            font-size: 30px;
         }
 
         .header > p{
