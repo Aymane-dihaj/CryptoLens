@@ -1,5 +1,5 @@
 {
-  "name": "cryptodex",
+  "name": "cryptoLens",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -15,10 +15,13 @@
     "@mui/icons-material": "^5.15.17",
     "@mui/material": "^5.15.17",
     "@mui/styled-engine-sc": "^6.0.0-alpha.18",
+    "aos": "^2.3.4",
     "axios": "^1.6.8",
+    "bootstrap": "^5.3.3",
     "cryptocompare": "^1.0.0",
     "framer-motion": "^11.1.9",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.10.2",
     "react-dom": "^18.2.0",
     "react-flip-move": "^3.0.5",
     "styled-components": "^6.1.11"

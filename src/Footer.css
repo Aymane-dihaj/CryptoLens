@@ -1,0 +1,46 @@
+.footer{
+    border-top: 1.8px solid whitesmoke;
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+.contact{
+    display: flex;
+    /* margin: 10px; */
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 3px solid red; */
+    width: 200px;
+}
+
+
+.contact > a{
+    text-decoration: none;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.contact > a:hover{
+    color: gray;
+    scale: 1.1;
+}
+
+@media screen and (max-width: 430px) {
+
+    .footer{
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        font-size: 15px;
+    }   
+    
+}

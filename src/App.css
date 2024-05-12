@@ -27,23 +27,138 @@ body{
     align-items: center;
     /* justify-content: center; */
     flex-direction: column;
-    gap: 200px;
+    gap: 100px;
     /* border: 3px solid red; */
 }
 
 
 
 
-@keyframes arrow-bounce{
-    0%   { transform: translateY(0px); }
-    50%  { transform: translateY(10px); }
-    100% { transform: translateY(0); }
+#mouse-scroll {
+    cursor: pointer;
 }
+#mouse-scroll {
+    /* position: fixed; */
+    margin-bottom: 400px;
+    margin-top: 50px;
+    left: 50%;
+    top: 80px;
+    -webkit-transform: translateX(-50%);
+    z-index: 9999;
+}
+#mouse-scroll span{
+    display: block;
+    width: 10px; 
+    height: 10px;
+    -ms-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+         transform: rotate(45deg);
+         transform: rotate(45deg);
+    border-right: 2px solid #fff; 
+    border-bottom: 2px solid #fff;
+    margin: 0 0 3px 5px;
+  }
+  #mouse-scroll .mouse {
+    height: 27px;
+    width: 20px;
+    border-radius: 10px;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    border: 2px solid #ffffff;
+    top: 170px;
+  }
+  #mouse-scroll .down-arrow-1 {
+    margin-top: 6px;
+  }
+  #mouse-scroll .down-arrow-1, #mouse-scroll .down-arrow-2, #mouse-scroll .down-arrow-3 {
+    -webkit-animation: mouse-scroll 1s infinite; 
+      -moz-animation: mouse-scroll 1s infinite;
+  }
+  #mouse-croll .down-arrow-1 {
+     -webkit-animation-delay: .1s; 
+     -moz-animation-delay: .1s;
+     -webkit-animation-direction: alternate;
+  }
+  #mouse-scroll .down-arrow-2 {
+    -webkit-animation-delay: .2s; 
+    -moz-animation-delay: .2s;
+    -webkit-animation-direction: alternate;
+  }
+  #mouse-scroll .down-arrow-3 {
+     -webkit-animation-delay: .3s;
+     -moz-animation-dekay: .3s;
+     -webkit-animation-direction: alternate;
+  }
+  #mouse-scroll .mouse-in {
+    height: 5px;
+    width: 2px;
+    display: block; 
+    margin: 5px auto;
+    background: #ffffff;
+    position: relative;
+  }
+  #mouse-scroll .mouse-in {
+   -webkit-animation: animated-mouse 1.2s ease infinite;
+    moz-animation: mouse-animated 1.2s ease infinite;
+  }
+  
+  @-webkit-keyframes animated-mouse {
+    0% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+    100% {
+       opacity: 0;
+      -webkit-transform: translateY(6px);
+      -ms-transform: translateY(6px);
+      transform: translateY(6px);
+    }
+  }
+  @-webkit-keyframes mouse-scroll {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: .5;
+    }
+    100% {
+      opacity: 1;
+    } 
+  }
+  @keyframes mouse-scroll {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 
 
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(161, 161, 161) black;
+    scroll-behavior: smooth;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(83, 83, 83) black;
+    scroll-behavior: smooth;
+  }
 
-.MuiSvgIcon-root{
-    animation: arrow-bounce 1.5s linear infinite;
+
+  @media screen and (max-width: 650px) {
+
     
-}
-
+    
+  }

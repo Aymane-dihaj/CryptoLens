@@ -83,3 +83,40 @@
     backdrop-filter: blur(4px);
     border: 1.3px solid white;
 }
+
+@media screen and (max-width: 650px) {
+
+
+    .tracker{
+        border: 3px solid red;
+    }
+
+    .coins-container{
+        padding: 0px;
+        gap: 20px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 430px) {
+
+       .tracker-search{
+        width: 60%;
+
+       }
+
+       .coins-container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        place-items: center;
+        grid-row: 50% 50%;
+        padding: 30px;
+       }
+
+       .coin{
+        width: 100%;
+       }
+    
+}
