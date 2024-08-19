@@ -12,6 +12,25 @@ import Footer from './Footer'
 
 // Api: https://api.coincap.io/v2/assets
 
+
+export const Arrow = () => {
+
+
+  return (
+        // <SouthIcon className='southArrow' style={{color: 'white', height: 100}} onClick={() => { window.scrollTo({top: 1300, behavior: 'smooth'}) }}/>
+        <div id="mouse-scroll" onClick={() => { window.scrollTo({top: 1200, behavior: 'smooth'}) }}>
+        <div class="mouse">
+          <div class="mouse-in"></div>
+        </div>
+        <div>
+            <span class="down-arrow-1"></span>
+            <span class="down-arrow-2"></span>
+            <span class="down-arrow-3"></span>
+         </div>
+      </div>
+      )
+}
+
 function App() {
 
   const ArrowStyle = {
@@ -28,29 +47,12 @@ function App() {
   
 
 
-  const Arrow = () => {
 
-
-    return (
-          // <SouthIcon className='southArrow' style={{color: 'white', height: 100}} onClick={() => { window.scrollTo({top: 1300, behavior: 'smooth'}) }}/>
-          <div id="mouse-scroll" onClick={() => { window.scrollTo({top: 1200, behavior: 'smooth'}) }}>
-          <div class="mouse">
-            <div class="mouse-in"></div>
-          </div>
-          <div>
-              <span class="down-arrow-1"></span>
-              <span class="down-arrow-2"></span>
-              <span class="down-arrow-3"></span>
-           </div>
-        </div>
-        )
-  }
 
   return (
     <>
       <div className='app'>
           <Header/>
-          <Arrow  className="arrow" />
           <Tracker/>
           <Footer/>
       </div>
