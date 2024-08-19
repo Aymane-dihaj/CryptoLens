@@ -28,7 +28,7 @@
 }
 
 .tracker-search{
-    width: 33%;
+    width: 400px;
     height: 100%;
     background-color: transparent;
     border: 1.3px solid whitesmoke;
@@ -47,15 +47,32 @@
 }
 
 .coins-container{
-    /* border: 3px solid green; */
-    padding: 40px;
-    width: 100%;
+    padding: 100px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 10px;
     height: 100%;
+}
+
+.coins{
+    width: 100%;
+    padding: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    place-items: center;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.coin{
+    /* max-width: 30rem; */
+    /* border: 2px solid blue; */
+    width: 100%;
 }
 
 .refresh{
@@ -77,11 +94,26 @@
     transition: all 0.2s ease-in-out;
 }
 
+.loading-wrapper{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+
 .refresh:hover{
     background-color: transparent;
     color: white;
     backdrop-filter: blur(4px);
     border: 1.3px solid white;
+}
+
+
+.load-more{
+    padding: 10px;
+    cursor: pointer;
+
 }
 
 @media screen and (max-width: 650px) {

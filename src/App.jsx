@@ -10,7 +10,7 @@ import { useEffect } from 'react'
 import Footer from './Footer'
 
 
-// Api: https://api.coincap.io/v2/assets
+
 
 
 export const Arrow = () => {
@@ -19,13 +19,13 @@ export const Arrow = () => {
   return (
         // <SouthIcon className='southArrow' style={{color: 'white', height: 100}} onClick={() => { window.scrollTo({top: 1300, behavior: 'smooth'}) }}/>
         <div id="mouse-scroll" onClick={() => { window.scrollTo({top: 1200, behavior: 'smooth'}) }}>
-        <div class="mouse">
-          <div class="mouse-in"></div>
+        <div className="mouse">
+          <div className="mouse-in"></div>
         </div>
         <div>
-            <span class="down-arrow-1"></span>
-            <span class="down-arrow-2"></span>
-            <span class="down-arrow-3"></span>
+            <span className="down-arrow-1"></span>
+            <span className="down-arrow-2"></span>
+            <span className="down-arrow-3"></span>
          </div>
       </div>
       )
